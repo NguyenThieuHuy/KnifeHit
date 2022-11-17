@@ -49,9 +49,9 @@ export class Knife extends Component {
     //     // [4]
         if (this.trangthai == 1)
         {
-            let newPosition = new Vec3(100 * Math.cos((this.wood.node.eulerAngles.z + this.angle) * 3.14/180), 100 * Math.sin((this.wood.node.eulerAngles.z + this.angle) * 3.14/180), 0);
+            let newPosition = new Vec3(85 * Math.cos((this.wood.node.eulerAngles.z + this.angle) * 3.14/180), 85 * Math.sin((this.wood.node.eulerAngles.z + this.angle) * 3.14/180), 0);
             this.node.position = newPosition;
-            this.node.setRotationFromEuler(new Vec3(0, 0, this.wood.node.eulerAngles.z + this.angle - 90));
+            this.node.setRotationFromEuler(new Vec3(0, 0, this.wood.node.eulerAngles.z + this.angle - 270));
         }
         else if (this.trangthai == 2)
         {

@@ -8,13 +8,14 @@
       "__id__": 1
     },
     "optimizationPolicy": 0,
-    "asyncLoadAssets": false,
-    "persistent": false
+    "persistent": false,
+    "asyncLoadAssets": false
   },
   {
     "__type__": "cc.Node",
     "_name": "Knife",
     "_objFlags": 0,
+    "__editorExtras__": {},
     "_parent": null,
     "_children": [],
     "_active": true,
@@ -104,7 +105,6 @@
     "__prefab": {
       "__id__": 5
     },
-    "_visFlags": 0,
     "_customMaterial": null,
     "_srcBlendFactor": 2,
     "_dstBlendFactor": 4,
@@ -116,7 +116,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "c583f260-8894-4212-a7fc-cb5cc8aea20f@f9941",
+      "__uuid__": "e926a5a3-1b72-40d7-80bf-b83b09627029@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -218,7 +218,7 @@
     "BodyAnim": {
       "__id__": 8
     },
-    "cay": null,
+    "wood": null,
     "trangthai": 2,
     "_id": ""
   },
