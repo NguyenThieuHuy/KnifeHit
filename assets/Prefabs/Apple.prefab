@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "Knife",
+    "_name": "Apple",
     "_objFlags": 0,
     "_native": "",
     "data": {
@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Knife",
+    "_name": "Apple",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": null,
@@ -30,10 +30,10 @@
         "__id__": 6
       },
       {
-        "__id__": 8
+        "__id__": 10
       },
       {
-        "__id__": 10
+        "__id__": 8
       }
     ],
     "_prefab": {
@@ -41,8 +41,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": -200,
+      "x": 298.032,
+      "y": 242.978,
       "z": 0
     },
     "_lrot": {
@@ -80,8 +80,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 10,
-      "height": 50
+      "width": 15,
+      "height": 20
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -92,7 +92,7 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "beWZKmdEVCQr/KafZICx1C"
+    "fileId": "251r5FXIdN6Knw6WpkiBIv"
   },
   {
     "__type__": "cc.Sprite",
@@ -116,7 +116,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "e926a5a3-1b72-40d7-80bf-b83b09627029@f9941",
+      "__uuid__": "d6df5332-f057-4798-9206-06926563ba91@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -136,10 +136,10 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "a18htOamJG+r5QeD5RlyVi"
+    "fileId": "7cXt7iLcBIv4b8oDIv3H4/"
   },
   {
-    "__type__": "cc.BoxCollider2D",
+    "__type__": "24f29vE8lZGEogvUApDV+U8",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -149,27 +149,15 @@
     "__prefab": {
       "__id__": 7
     },
-    "tag": 1,
-    "_group": 1,
-    "_density": 1,
-    "_sensor": false,
-    "_friction": 0.2,
-    "_restitution": 0,
-    "_offset": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+    "BodyAnim": {
+      "__id__": 8
     },
-    "_size": {
-      "__type__": "cc.Size",
-      "width": 10,
-      "height": 50
-    },
+    "wood": null,
     "_id": ""
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "15ZzsHfJxCa6mcfcYeTsOP"
+    "fileId": "3dBy0KQzVOTZ10KjpIhsSz"
   },
   {
     "__type__": "cc.RigidBody2D",
@@ -202,10 +190,10 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "9997uIFq5Pi5f6E4rFGi5+"
+    "fileId": "a8CW/x+1hAnqhf5Y6dgn2h"
   },
   {
-    "__type__": "daeaexj9gBMeoc12hg+7eQn",
+    "__type__": "cc.BoxCollider2D",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -215,16 +203,27 @@
     "__prefab": {
       "__id__": 11
     },
-    "BodyAnim": {
-      "__id__": 8
+    "tag": 0,
+    "_group": 1,
+    "_density": 1,
+    "_sensor": false,
+    "_friction": 0.2,
+    "_restitution": 0,
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
     },
-    "wood": null,
-    "trangthai": 2,
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 10,
+      "height": 10
+    },
     "_id": ""
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "dc0+H6xdBDVJYYCnLhBzuh"
+    "fileId": "a2bTsPYTFLtaCV+AVtoJFI"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -234,6 +233,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "48YJNBrf1HzZIp/OZRkaNU"
+    "fileId": "b1kn6XivZEOIdziV+ou9/f",
+    "targetOverrides": []
   }
 ]

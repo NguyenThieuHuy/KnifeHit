@@ -1,6 +1,8 @@
 
-import { _decorator, Component, Node, Vec3, systemEvent, SystemEventType, EventKeyboard, macro, Prefab, instantiate, RichText, RichTextComponent } from 'cc';
+import { _decorator, Component, Node, Vec3, systemEvent, SystemEventType, EventKeyboard, macro, Prefab, instantiate, RichText, RichTextComponent, animation, randomRange } from 'cc';
 import { Knife } from "./Knife";
+import { Apple } from "./Apple";
+import { Level_design } from "./Level_design";
 const { ccclass, property } = _decorator;
 
 /**
@@ -27,12 +29,30 @@ export class Wood extends Component {
     @property({type: Prefab})
     public knifePrefab: Prefab|null = null;
 
-    @property({type: RichText})
-    public richText: RichText|null = null;
+    @property({type: Prefab})
+    public applePrefab: Prefab|null = null;
 
     start () {
         // [3]
         systemEvent.on(SystemEventType.KEY_DOWN, this.onKeyDown, this);
+
+        for (let i = 0; i < Level_design.KnifeNum; i++) {
+            let newKnife = instantiate(this.knifePrefab);
+            newKnife.parent = this.node.parent;
+            newKnife.getComponent(Knife).angle = randomRange(0,-360);
+            newKnife.getComponent(Knife).trangthai = 1;
+            newKnife.getComponent(Knife).wood = this;
+        
+        }
+
+        for (let i = 0; i < Level_design.AppleNum; i++) {
+            let newApple = instantiate(this.applePrefab);
+            newApple.parent = this.node.parent;
+            newApple.getComponent(Apple).angle = randomRange(0,-360);
+            newApple.getComponent(Apple).wood = this;
+        
+        }
+
     }
 
     update (deltaTime: number) {
@@ -44,18 +64,17 @@ export class Wood extends Component {
     onKeyDown (event: EventKeyboard) {
         switch(event.keyCode) {
             case macro.KEY.a:
-                console.log('Press a b key');
                 let newKnife = instantiate(this.knifePrefab);
                 newKnife.parent = this.node.parent;
                 newKnife.position = new Vec3(0, -250, 0);
                 newKnife.getComponent(Knife).wood = this;
+                Level_design.Point--;
                 break;
         }
     }
 
     onClickButton (event: CustomEvent) {
         console.log('click button');
-        this.richText.string = "ok";
     }
 }
 
